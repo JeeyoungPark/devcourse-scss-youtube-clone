@@ -1,0 +1,117 @@
+.header__container {
+  height: 56px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__wrapper.start {
+  display: flex;
+  align-items: center;
+  .checkbox {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .guide-button {
+    @include item;
+    svg {
+      @include icon;
+    }
+  }
+  .logo {
+    @include item(120px);
+    svg {
+      @include icon(20px, 90px);
+    }
+  }
+}
+.header__wrapper.center {
+  flex-basis: 728px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .search {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    border: 1px solid var(--grey-dark-color);
+    border-radius: 3px;
+    form {
+      padding: 2px 6px;
+      height: 40px;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      input {
+        width: 100%;
+        height: 24px;
+        padding: 0 6px;
+        border: none;
+        flex-grow: 1;
+        &:focus {
+          outline: none;
+        }
+      }
+      a {
+        padding: 0 4px;
+      }
+    }
+    button {
+      @include item(64px){
+        border-left: 1px solid var(--grey-dark-color);
+        flex-shrink: 0;
+        background-color: var(--grey-light-color);
+      }
+      svg {
+        @include icon;
+      }
+    }
+  }
+  .voice-search {
+    flex-shrink: 0;
+    @include item {
+      margin-left: 4px;
+    }
+    svg {
+      @include icon;
+    }
+  }
+}
+.header__wrapper.end {
+  display: flex;
+  flex-basis: 225px;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  align-items: center;
+  button {
+    @include item {
+      margin-right: 8px;
+    };
+    svg {
+      @include icon;
+    }
+  }
+  a {
+    width: 99.5px;
+    height: 40px;
+    padding: 5px 11px;
+    border: 1px solid rgb(6, 95, 212);
+    border-radius: 2px;
+    color: var(--blue-color);
+    font-size: var(--font-medium);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    svg {
+      @include icon {
+        // FIXME 로그인 아이콘 색깔 적용 안됨
+        color: var(--blue-color);
+      }
+    }
+    span {
+      margin-left: 8px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@mixin item($w: 40px) {
+  width: $w;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  @content;
+}
+@mixin icon($w: 24px, $h: 24px) {
+  width: $w;
+  width: $h;
+  @content;
+}
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

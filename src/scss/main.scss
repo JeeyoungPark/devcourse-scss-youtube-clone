@@ -1,0 +1,43 @@
+@import "./@mixin.scss";
+@import "./header.scss";
+@import "./section.scss";
+@import "./nav.scss";
+
+:root {
+  /*Color*/
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-color: rgba(0, 0, 0, 0.05);
+  --grey-light-color: #f8f8f8;
+  --grey-dark-color: rgb(211, 211, 211);
+
+  /*Size*/
+  --padding: 12px;
+  --avatar-size: 36px;
+
+  /*Font Size*/
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  font-family: Roboto;
+}
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+button:hover, a:hover, li:hover {
+  cursor: pointer;
+}
