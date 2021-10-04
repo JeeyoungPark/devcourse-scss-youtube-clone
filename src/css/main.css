@@ -353,21 +353,21 @@ section .contents {
 
 @media screen and (min-width: 1200px) {
   section .contents {
-    -ms-grid-columns: (1fr)[4];
+    /* -ms-grid-columns: (1fr)[4]; */
         grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media screen and (min-width: 950px) and (max-width: 1200px) {
   section .contents {
-    -ms-grid-columns: (1fr)[3];
+    /* -ms-grid-columns: (1fr)[3]; */
         grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (min-width: 650px) and (max-width: 950px) {
   section .contents {
-    -ms-grid-columns: (1fr)[2];
+    /* -ms-grid-columns: (1fr)[2]; */
         grid-template-columns: repeat(2, 1fr);
   }
 }
